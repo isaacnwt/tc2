@@ -5,17 +5,17 @@ import { MarioPequeno } from "./MarioPequeno.js";
 export class MarioCapa implements IMarioState {
 
     pegarCogumelo(): IMarioState {
-        console.log("Mario ganhou 1000 pontos");
+        console.log("Mario ganhou 100 pontos");
         return this;
     }
 
     pegarFlor(): IMarioState {
-        console.log("Mario com fogo. Ganhou 100 pontos");
+        console.log("Mario com fogo");
         return new MarioFogo();
     }
 
     pegarPena(): IMarioState {
-        console.log("Mario com capa");
+        console.log("Ganhou 100 pontos");
         return new MarioCapa();
     }
     

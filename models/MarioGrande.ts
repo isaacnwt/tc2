@@ -6,12 +6,12 @@ import { MarioPequeno } from "./MarioPequeno.js";
 export class MarioGrande implements IMarioState {
 
     pegarCogumelo(): IMarioState {
-        console.log("Mario ganhou 1000 pontos");
+        console.log("Mario ganhou 50 pontos");
         return this;
     }
 
     pegarFlor(): IMarioState {
-        console.log("Mario com fogo. Ganhou 100 pontos");
+        console.log("Mario com fogo");
         return new MarioFogo();
     }
 
